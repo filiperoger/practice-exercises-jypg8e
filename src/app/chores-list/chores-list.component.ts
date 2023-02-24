@@ -3,14 +3,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'chores-list',
   templateUrl: './chores-list.component.html',
-  styleUrls: ['./chores-list.component.css']
+  styleUrls: ['./chores-list.component.css'],
 })
 export class ChoresListComponent implements OnInit {
-  chores = ['Empty dishwasher', 'Complete LaunchCode prep work', 'Buy groceries'];
+  chores = [
+    { title: 'Empty dishwasher' },
+    { title: 'Complete LaunchCode prep work' },
+    { title: 'Buy groceries' },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

@@ -1,9 +1,17 @@
 <div class="movies">
   <h3>Movies to Watch</h3>
-  <ol>
-    <li>{{movies[0]}}</li>
-    <li>{{movies[1]}}</li>
-    <li>{{movies[2]}}</li>
-    <li>{{movies[3]}}</li>
-  </ol>
+  <table class="table movies">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let title of movies">
+        <th>*</th>
+        <td>{{ title.title }}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

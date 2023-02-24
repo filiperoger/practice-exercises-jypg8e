@@ -3,14 +3,17 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'movie-list',
   templateUrl: './movie-list.component.html',
-  styleUrls: ['./movie-list.component.css']
+  styleUrls: ['./movie-list.component.css'],
 })
 export class MovieListComponent implements OnInit {
-  movies = ['The Incredibles', 'The Manchurian Candidate', 'Oceans 8', 'The Princess Bride'];
+  movies = [
+    { title: 'The Incredibles' },
+    { title: 'The Manchurian Candidate' },
+    { title: 'Oceans 8' },
+    { title: 'rosh' },
+  ];
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

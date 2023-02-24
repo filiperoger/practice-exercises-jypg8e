@@ -1,16 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'page-title',
   templateUrl: './page-title.component.html',
-  styleUrls: ['./page-title.component.css']
+  styleUrls: ['./page-title.component.css'],
 })
 export class PageTitleComponent implements OnInit {
-  title = "Page Title";
+  title = 'Page Title';
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) {}
 
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
